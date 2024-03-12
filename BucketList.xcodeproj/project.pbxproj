@@ -14,6 +14,10 @@
 		5717581E2B9BF74A000ECB72 /* BucketListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5717581D2B9BF74A000ECB72 /* BucketListTests.swift */; };
 		571758282B9BF74A000ECB72 /* BucketListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571758272B9BF74A000ECB72 /* BucketListUITests.swift */; };
 		5717582A2B9BF74A000ECB72 /* BucketListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571758292B9BF74A000ECB72 /* BucketListUITestsLaunchTests.swift */; };
+		571758372B9C2AE8000ECB72 /* FileManagerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571758362B9C2AE8000ECB72 /* FileManagerExtention.swift */; };
+		571758392B9EA2CF000ECB72 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571758382B9EA2CF000ECB72 /* Location.swift */; };
+		5717583B2B9EB1D0000ECB72 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5717583A2B9EB1D0000ECB72 /* EditView.swift */; };
+		5717583D2B9FDCAE000ECB72 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5717583C2B9FDCAE000ECB72 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		571758232B9BF74A000ECB72 /* BucketListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BucketListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		571758272B9BF74A000ECB72 /* BucketListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListUITests.swift; sourceTree = "<group>"; };
 		571758292B9BF74A000ECB72 /* BucketListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		571758362B9C2AE8000ECB72 /* FileManagerExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtention.swift; sourceTree = "<group>"; };
+		571758382B9EA2CF000ECB72 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		5717583A2B9EB1D0000ECB72 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		5717583C2B9FDCAE000ECB72 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,10 @@
 				5717580F2B9BF74A000ECB72 /* Assets.xcassets */,
 				571758112B9BF74A000ECB72 /* BucketList.entitlements */,
 				571758122B9BF74A000ECB72 /* Preview Content */,
+				571758362B9C2AE8000ECB72 /* FileManagerExtention.swift */,
+				571758382B9EA2CF000ECB72 /* Location.swift */,
+				5717583A2B9EB1D0000ECB72 /* EditView.swift */,
+				5717583C2B9FDCAE000ECB72 /* Result.swift */,
 			);
 			path = BucketList;
 			sourceTree = "<group>";
@@ -259,7 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5717583D2B9FDCAE000ECB72 /* Result.swift in Sources */,
 				5717580E2B9BF749000ECB72 /* ContentView.swift in Sources */,
+				5717583B2B9EB1D0000ECB72 /* EditView.swift in Sources */,
+				571758372B9C2AE8000ECB72 /* FileManagerExtention.swift in Sources */,
+				571758392B9EA2CF000ECB72 /* Location.swift in Sources */,
 				5717580C2B9BF749000ECB72 /* BucketListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +440,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -462,6 +479,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
