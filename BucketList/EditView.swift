@@ -21,6 +21,7 @@ struct EditView: View {
     @State private var pages = [Page]()
     
     var onSave: (Location) -> Void
+    var onDelete: (Location) -> Void
     
     var body: some View {
         NavigationStack {
@@ -51,14 +52,20 @@ struct EditView: View {
                 }
             }.navigationTitle("Place details")
                 .toolbar {
-                    
-                    Button("Save"){
-                        var newLocation = location
-                        newLocation.id = UUID()
-                        newLocation.name = name
-                        newLocation.description = description
-                        onSave(newLocation)
-                        dismiss()
+                    ToolbarItem(placement: .topBarLeading){
+                        Button("Cancel", role: .cancel) {
+                            dismiss()
+                        }
+                    }
+                    ToolbarItem(placement: .topBarTrailing){
+                        Button("Save"){
+                            var newLocation = location
+                            newLocation.id = UUID()
+                            newLocation.name = name
+                            newLocation.description = description
+                            onSave(newLocation)
+                            dismiss()
+                        }
                     }
                 }
         }.task {
@@ -66,11 +73,12 @@ struct EditView: View {
         }
     }
     
-    init(location: Location, onSave: @escaping (Location) -> Void){
+    init(location: Location, onSave: @escaping (Location) -> Void, onDelete: @escaping (Location) -> Void){
         self.location = location
         _name = State(initialValue: location.name)
         _description = State(initialValue: location.description)
         self.onSave = onSave
+        self.onDelete = onDelete
     }
     
     func fetchNearbyPages() async {
@@ -98,5 +106,7 @@ struct EditView: View {
     let location = Location.example
     return EditView(location: location) {location in
         
+    } onDelete: { location in
+        print("Deleting")
     }
 }

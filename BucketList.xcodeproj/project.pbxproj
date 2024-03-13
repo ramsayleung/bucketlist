@@ -18,6 +18,7 @@
 		571758392B9EA2CF000ECB72 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571758382B9EA2CF000ECB72 /* Location.swift */; };
 		5717583B2B9EB1D0000ECB72 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5717583A2B9EB1D0000ECB72 /* EditView.swift */; };
 		5717583D2B9FDCAE000ECB72 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5717583C2B9FDCAE000ECB72 /* Result.swift */; };
+		57FDCF0B2BA15EFD005CBBC9 /* ContentModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FDCF0A2BA15EFD005CBBC9 /* ContentModelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		571758382B9EA2CF000ECB72 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		5717583A2B9EB1D0000ECB72 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		5717583C2B9FDCAE000ECB72 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		57FDCF0A2BA15EFD005CBBC9 /* ContentModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				571758382B9EA2CF000ECB72 /* Location.swift */,
 				5717583A2B9EB1D0000ECB72 /* EditView.swift */,
 				5717583C2B9FDCAE000ECB72 /* Result.swift */,
+				57FDCF0A2BA15EFD005CBBC9 /* ContentModelView.swift */,
 			);
 			path = BucketList;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57FDCF0B2BA15EFD005CBBC9 /* ContentModelView.swift in Sources */,
 				5717583D2B9FDCAE000ECB72 /* Result.swift in Sources */,
 				5717580E2B9BF749000ECB72 /* ContentView.swift in Sources */,
 				5717583B2B9EB1D0000ECB72 /* EditView.swift in Sources */,
@@ -440,7 +444,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your place";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -479,7 +483,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your place";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
