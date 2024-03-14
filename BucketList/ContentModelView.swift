@@ -7,13 +7,26 @@
 
 import Foundation
 import LocalAuthentication
+import MapKit
+import _MapKit_SwiftUI
+
+enum MapStyleOption: String, CaseIterable, Identifiable {
+    case standard
+    case hybrid
+
+    var id: String { self.rawValue }
+}
 
 extension ContentView {
+    
     @Observable
     class ViewModel {
         private(set) var locations = [Location]()
         var selectedPlace: Location?
         var isUnlocked = false
+        var selectedMapStyle: MapStyleOption = .standard
+        
+        let supportedCandidate: [MapStyle] = [.hybrid, .standard]
         
         let savePath = URL.documentsDirectory.appending(path: "savedPlaces")
         
@@ -55,6 +68,15 @@ extension ContentView {
             }
             save()
         }
+        
+        func mapStyle(for option: MapStyleOption) -> MapStyle {
+                switch option {
+                    case .standard:
+                        return .standard
+                    case .hybrid:
+                        return .hybrid
+                }
+            }
         
         func authenticate() {
             let context = LAContext()
