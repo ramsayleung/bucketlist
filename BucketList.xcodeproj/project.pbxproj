@@ -19,6 +19,7 @@
 		5717583B2B9EB1D0000ECB72 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5717583A2B9EB1D0000ECB72 /* EditView.swift */; };
 		5717583D2B9FDCAE000ECB72 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5717583C2B9FDCAE000ECB72 /* Result.swift */; };
 		57FDCF0B2BA15EFD005CBBC9 /* ContentModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FDCF0A2BA15EFD005CBBC9 /* ContentModelView.swift */; };
+		57FDCF0D2BA2B72F005CBBC9 /* EditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FDCF0C2BA2B72F005CBBC9 /* EditViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		5717583A2B9EB1D0000ECB72 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		5717583C2B9FDCAE000ECB72 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		57FDCF0A2BA15EFD005CBBC9 /* ContentModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModelView.swift; sourceTree = "<group>"; };
+		57FDCF0C2BA2B72F005CBBC9 /* EditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				5717583A2B9EB1D0000ECB72 /* EditView.swift */,
 				5717583C2B9FDCAE000ECB72 /* Result.swift */,
 				57FDCF0A2BA15EFD005CBBC9 /* ContentModelView.swift */,
+				57FDCF0C2BA2B72F005CBBC9 /* EditViewModel.swift */,
 			);
 			path = BucketList;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57FDCF0D2BA2B72F005CBBC9 /* EditViewModel.swift in Sources */,
 				57FDCF0B2BA15EFD005CBBC9 /* ContentModelView.swift in Sources */,
 				5717583D2B9FDCAE000ECB72 /* Result.swift in Sources */,
 				5717580E2B9BF749000ECB72 /* ContentView.swift in Sources */,
