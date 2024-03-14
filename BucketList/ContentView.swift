@@ -56,6 +56,9 @@ struct ContentView: View {
                         } onDelete: {
                             viewModel.removeLocation(location: $0)
                         }
+                    }.alert("Authentication Error",isPresented: $viewModel.showingAuthenticationError){
+                    } message : {
+                        Text(viewModel.authenticationErrorMsg)
                     }
                 }
                 Spacer()

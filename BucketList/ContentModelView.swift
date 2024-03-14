@@ -29,6 +29,8 @@ extension ContentView {
         let supportedCandidate: [MapStyle] = [.hybrid, .standard]
         
         let savePath = URL.documentsDirectory.appending(path: "savedPlaces")
+        var showingAuthenticationError = false
+        var authenticationErrorMsg = ""
         
         init() {
             do {
@@ -89,6 +91,8 @@ extension ContentView {
                         self.isUnlocked = true
                     }else{
                         // authentication error
+                        self.showingAuthenticationError = true
+                        self.authenticationErrorMsg = "Failed to authenticate with biometrics"
                     }
                 }
             }else{
