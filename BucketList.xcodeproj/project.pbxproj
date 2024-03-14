@@ -57,6 +57,7 @@
 		5717583C2B9FDCAE000ECB72 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		57FDCF0A2BA15EFD005CBBC9 /* ContentModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModelView.swift; sourceTree = "<group>"; };
 		57FDCF0C2BA2B72F005CBBC9 /* EditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewModel.swift; sourceTree = "<group>"; };
+		57FDCF0E2BA2BA55005CBBC9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +88,7 @@
 		571757FF2B9BF749000ECB72 = {
 			isa = PBXGroup;
 			children = (
+				57FDCF0E2BA2BA55005CBBC9 /* README.md */,
 				5717580A2B9BF749000ECB72 /* BucketList */,
 				5717581C2B9BF74A000ECB72 /* BucketListTests */,
 				571758262B9BF74A000ECB72 /* BucketListUITests */,
